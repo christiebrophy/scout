@@ -31,7 +31,7 @@ class CityController < ApplicationController
     when "nursery_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="nursery"'
     when "mirrors"
-      search1 = 'categories/vintage/antique/housewares&keywords="mirrors"'
+      search1 = 'categories/vintage/antique/housewares&keywords="vintage mirror"'
     when "rattan"
        search1 = 'categories/vintage/antique/furniture&keywords="rattan"'
     when "side_tables"
