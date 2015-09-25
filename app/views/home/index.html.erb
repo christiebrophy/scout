@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+
+ <div class="container-fluid">
+        <div class="text-center" id="cityintro1">Scoutiste</div>
+        <div class="text-center" id="cityintro2">We filter Craigslist postings to show you only the best furniture and design.<br></div>
+        <div class="text-center" id="cityintro3">Say goodbye to the endless searching and scrolling.<br></div>
+        <div class="text-center" id="cityintro4">Say hello to your new addiction.<br></div>
+  </div>
+
+  <nav class="navbar navbar-header">
+      <div class="btn-group">
+        <button type="button" class="btn btn-large dropdown-toggle" data-toggle="dropdown" aria-expanded="false">PICK YOUR LOCATION<span class="caret"></span>
+        </button>
+        
+        <ul class="dropdown-menu center-text" role="menu">
+          <% @city_array.each do |key|%>
+            <li><a href="<%=city_path(key)%>"><%=key%></a></li>
+          <%end%>
+        </ul>
+        <br>
+        <br>
+
+      </div>
+  </nav>
+
+
+
+ 
+
+  <br><br><br><br><br><br><br><br>
+
+
+</body>
+</html>

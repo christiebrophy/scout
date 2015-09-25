@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ @import url("//hello.myfonts.net/count/2f4359");
+
+  
+@font-face {font-family: 'UniformBold-Bold';src: font-url('2F4359_0_0.eot');src: font-url('2F4359_0_0.eot?#iefix') format('embedded-opentype'),font-url('2F4359_0_0.woff2') format('woff2'),font-url('2F4359_0_0.woff') format('woff'),font-url('2F4359_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'UniformExtraCondensedBold-Bold';src: font-url('2F4359_1_0.eot');src: font-url('2F4359_1_0.eot?#iefix') format('embedded-opentype'),font-url('2F4359_1_0.woff2') format('woff2'),font-url('2F4359_1_0.woff') format('woff'),font-url('2F4359_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'UniformExtraCondensedMedium-Medium';src: font-url('2F4359_2_0.eot');src: font-url('2F4359_2_0.eot?#iefix') format('embedded-opentype'),font-url('2F4359_2_0.woff2') format('woff2'),font-url('2F4359_2_0.woff') format('woff'),font-url('2F4359_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'UniformUltra-Ultra';src: font-url('2F4359_3_0.eot');src: font-url('2F4359_3_0.eot?#iefix') format('embedded-opentype'),font-url('2F4359_3_0.woff2') format('woff2'),font-url('2F4359_3_0.woff') format('woff'),font-url('2F4359_3_0.ttf') format('truetype');}
+
+#cityintro1 {
+  margin:25px 0px 50px 0px;
+  color:#333;
+  font-family: 'UniformExtraCondensedBold-Bold';
+  font-weight: normal;
+  font-size: 400%;
+  text-transform: uppercase;
+}
+
+#cityintro2 {
+  color:#333;
+  font-family: 'UniformExtraCondensedMedium-Medium';
+  font-weight: normal;
+  font-size: 225%;
+  
+}
+
+#cityintro3 {
+  color:#333;
+  font-family: 'UniformExtraCondensedBold-Bold';
+  font-weight: normal;
+  font-size: 295%;
+  text-transform: uppercase;
+
+}
+
+#cityintro4 {
+  color:#333;
+  margin:0px 0px 0px 0px;
+  font-family: 'UniformUltra-Ultra';
+  font-weight: normal;
+  font-size: 282%;
+  text-transform: uppercase;
+}
+
+
+#searchintro1 {
+  margin:50px 0px 0px 0px;
+  color:#222;
+  font-family: 'UniformUltra-Ultra';
+  font-weight: normal;
+  font-size: 300%;
+}
+
+#searchintro2 {
+  color:#222;
+  margin:50px 0px 50px 0px;
+  font-family: 'UniformExtraCondensedBold-Bold';
+
+  font-weight: normal;
+  font-size: 259%;
+}
+
+
+#searchintro3 {
+  margin:0px 0px 50px 0px;
+  color:#222;
+  font-family: 'UniformUltra-Ultra';
+  font-weight: normal;
+  font-size: 300%;
+}
+
+.jumbotron {
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    postition: relative;
+    padding: 20% 0 0 0; ;
+    margin: 10% 0 200 0;
+
+}

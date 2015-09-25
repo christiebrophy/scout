@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container-fluid">
+      <div class="text-center" id="searchintro2">
+        <a href="<%=home_index_path%>">Scoutiste></a>
+        <a href="<%=city_show_path%>"> <%=params[:city]%> ></a>
+          <%=@title%></div>
+
+</div>
+
+  
+  
+
+  <div id="container">
+    <% @array.each do |listing| %>
+       <div class="text-center masonryitem">
+       
+        <% if (listing['image'] != 0) %>
+          <a href="<%=listing['url']%>"><img src="<%=listing['image']%>" ></a><br>
+          <div class="text-center itemtext"><%=listing['title']%> - $<%=listing['price']%></div>
+        <% end %>
+       </div>
+    <% end %>
+  </div>
+
+</body>
+</html>

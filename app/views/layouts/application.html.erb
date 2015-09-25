@@ -2,9 +2,19 @@
 <html>
 <head>
   <title>Scout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+	<nav class="navbar">
+	    <div class="container-fluid">
+	      <div class="navbar-header">
+	        <a class="navbar-brand" href="<%=home_index_path%>">
+	          <img alt="Brand" src="<%=asset_path('logo2.png')%>">
+	        </a>
+	      </div>
+	    </div>
+	</nav>
 </head>
 <body>
 

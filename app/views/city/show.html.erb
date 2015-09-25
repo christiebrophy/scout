@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container-fluid">
+      <div class="text-center" id="cityintro1">Scoutiste > <%=params[:id]%></div>
+      <div class="text-center" id="cityintro2">We filter Craigslist postings to show you only the best furniture and design.<br></div>
+      <div class="text-center" id="cityintro3">Say goodbye to the endless searching and scrolling.<br></div>
+      <div class="text-center" id="cityintro4">Say hello to your new addiction.</div>
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/diningchairs.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=dining_chairs&city=<%= params[:id] %>" role="button">DINING CHAIRS</a>
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/CoffeeTable.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=coffee_table&city=<%= params[:id] %>" role="button">COFFEE TABLES</a>
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/sofa.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=sofas&city=<%= params[:id] %>" role="button">SOFAS</a>
+
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/sidetables.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=side_tables&city=<%= params[:id] %>" role="button">SIDE TABLES</a>
+</div>
+
+
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/dresser.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=dressers&city=<%= params[:id] %>" role="button">DRESSERS</a>
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/mirrors.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=mirrors&city=<%= params[:id] %>" role="button">MIRRORS</a>
+
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/desk.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=desks&city=<%= params[:id] %>" role="button">DESKS</a>
+
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/loungechairs.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=lounge_chairs&city=<%= params[:id] %>" role="button">LOUNGE CHAIRS</a>
+
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/lighting.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=lamps&city=<%= params[:id] %>" role="button">LIGHTING</a>
+
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/outdoor_furniture.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=outdoor_furniture&city=<%= params[:id] %>" role="button">OUTDOOR FURNITURE</a>
+
+</div>
+
+
+
+
+
+<div class="container">
+      <div class="text-center" id="cityintro1">Shop by style<br></div>
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/rattan.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=rattan&city=<%= params[:id] %>" role="button">RATTAN</a>
+
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/hollywoodregency.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=hollywood_regency&city=<%= params[:id] %>" role="button">HOLLYWOOD REGENCY</a>
+
+</div>
+
+<div class="jumbotron" style="background-image: url('https://s3-us-west-2.amazonaws.com/christiebrophy-scoutiste/chinoiserie.png')">
+  <a class="btn btn-lg btn-block" href="/search?editor=chinoiserie&city=<%= params[:id] %>" role="button">CHINOISERIE</a>
+
+</div>
+
+
+
+</body>
+</html>
