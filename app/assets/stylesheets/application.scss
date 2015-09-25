@@ -101,3 +101,91 @@
     margin: 10% 0 200 0;
 
 }
+
+.navbar-header {
+    float: left;
+    padding: 0px;
+    width: 100%;
+    text-align:center;
+}
+
+.navbar-brand {
+float:none;
+
+}
+
+
+.dropdown-menu {
+  text-align: center;
+  width: 100%;
+}
+
+.btn{
+    
+    margin-bottom: 0;
+    padding:0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 100%;
+    font-family: 'UniformUltra-Ultra';
+    font-weight: normal;
+    font-size: 200%;
+}
+
+.btn-lg{
+    padding: 0px;
+    line-height: 4;
+    font-family: 'UniformUltra-Ultra';
+    font-weight: normal;
+    font-size: 200%;
+    background-color: rgba(230,231,232,0.4);
+}
+
+.btn:focus {
+  background-color: rgba(230,231,232,0.7);
+  color: #000;
+}
+
+.btn:active {
+  background-color: rgba(230,231,232,0.7);
+  color: rgba(147,149,152,0.9);
+}
+   
+.btn:hover {
+  background-color: rgba(230,231,232,0.7) ;
+  color: #000;
+} 
+
+.btn-group{
+  text-align: center;
+}
+
+.caption {
+  background-color: rgba(230,231,232,0.4);
+  font-family: 'UniformUltra-Ultra';
+  font-weight: normal;
+  font-size: 200%;
+  height: 50%;
+  position: absolute;
+  z-index: 100;
+  width:100%;
+  padding: 0px;
+  margin:0px;
+}
+
+.masonryitem {
+  width: 170px;
+  height: 135px;
+  margin: 10px;
+  float: left;
+
+}
+.itemtext {
+  
+  font-family: 'UniformUltra-Ultra';
+  font-color:#000000;
+  font-weight: normal;
+  font-size: 100%;
+}
