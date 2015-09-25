@@ -31,13 +31,13 @@ class CityController < ApplicationController
     when "nursery_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="nursery"'
     when "mirrors"
-      search1 = 'categories/vintage/antique/furniture&keywords="mirrors"'
+      search1 = 'categories/vintage/antique/housewares&keywords="mirrors"'
     when "rattan"
        search1 = 'categories/vintage/antique/furniture&keywords="rattan"'
     when "side_tables"
        search1 = 'categories/vintage/antique/furniture&keywords="side tables"'
     when "lamps"
-       search1 = 'categories/vintage/antique/furniture&keywords="lamps"'
+       search1 = 'categories/housewares/lighting&keywords="vintage lamps"'
     when "dining_chairs"
        search1 = 'categories/vintage/antique/furniture&keywords="dining chairs"'
      when "coffee_table"
