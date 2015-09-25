@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
@@ -160,6 +161,7 @@ float:none;
 
 .btn-group{
   text-align: center;
+  background-color: rgba(230,231,232,0.4)
 }
 
 .caption {
