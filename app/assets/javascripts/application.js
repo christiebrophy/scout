@@ -20,8 +20,10 @@
 
 
 
-  $(document).ready(function(){
+ $(document).ready(function(){
         $('.dropdown-toggle').dropdown();
     });
 
- 
+
+
+var nanobar = new Nanobar( options );
