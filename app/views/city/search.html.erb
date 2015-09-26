@@ -25,8 +25,8 @@
        <div class="text-center masonryitem">
        
         <% if (listing['image'] != 0) %>
-          <a href="<%=listing['url']%>"><img src="<%=listing['image']%>" ></a><br>
-          <div class="text-center itemtext"><%=listing['title']%> - $<%=listing['price']%></div>
+          <a href="<%=listing['url']%>" target="_blank"><img src="<%=listing['image']%>" ></a><br>
+          <div class="text-center itemtext"><%=listing['title'][0..25]%>... - $<%=listing['price']%></div>
         <% end %>
        </div>
     <% end %>
