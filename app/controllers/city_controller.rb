@@ -84,7 +84,6 @@ class CityController < ApplicationController
       
       @listing_id = listing_id
       url_2 = "https://openapi.etsy.com/v2/listings/#{@listing_id}?fields=title,price,url&api_key=73nugzwvzagme29vrv97pxf0"
-      sleep(0.5)
       parsed_query_2 = Addressable::URI.parse(url_2).normalize.to_str
       response_2 = RestClient::Request.execute(method: :get, url: parsed_query_2)
       @parsed = JSON.parse(response_2)
@@ -96,7 +95,7 @@ class CityController < ApplicationController
       @price = @hash['price']
       url_3 = "https://openapi.etsy.com/v2/listings/#{listing_id}/images?method-GET&api_key=73nugzwvzagme29vrv97pxf0"
       parsed_query_3 = Addressable::URI.parse(url_3).normalize.to_str
-      sleep(0.5)
+      
       response_3 = RestClient::Request.execute(method: :get, url: parsed_query_3)
       @parsed = JSON.parse(response_3)
       @images = @parsed['results']
