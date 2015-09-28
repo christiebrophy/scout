@@ -27,21 +27,21 @@ class CityController < ApplicationController
     when "sofas"
       search1 = 'categories/vintage/antique/furniture&keywords="sofas"-"pillows"-"table"-"throw"-"card"-"poster"-"toy"-"doll"-"supplies"'
     when "desks"
-       search1 = 'categories/vintage/antique/furniture&keywords="vintage desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"'
+       search2 = 'categories/vintage/antique/furniture&tags=vintage&keywords="desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"'
     when "nursery_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="nursery"'
     when "mirrors"
-      search1 = 'categories/vintage/antique/housewares&keywords="vintage mirror"-"compact"-"jewelry"-"dental"-"hand"'
+      search1 = 'categories/vintage/antique/housewares&tags=vintage&keywords="mirror"-"compact"-"jewelry"-"dental"-"hand"'
     when "rattan"
        search1 = 'categories/vintage/antique/furniture&keywords="rattan"'
     when "side_tables"
-       search1 = 'categories/vintage/antique/furniture&keywords="side tables"'
+       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="side table"'
     when "lamps"
-       search1 = 'categories/housewares/lighting&keywords="vintage lamps"'
+       search1 = 'categories/housewares/lighting&tags=vintage&keywords="lamps"'
     when "dining_chairs"
-       search1 = 'categories/vintage/antique/furniture&keywords="dining chairs"'
+       search1 = 'categories/vintage/antique/furniture&keywords="dining chairs"-"jewelry"'
      when "coffee_table"
-       search1 = 'categories/vintage/antique/furniture&keywords="coffee tables"'
+       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="coffee table"-"tray"-"book"-"magazines"-"hardware"'
     when "lounge_chairs"
        search1 = 'categories/vintage/antique/furniture&keywords="lounge chairs"'
     else
