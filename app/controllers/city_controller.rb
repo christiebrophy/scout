@@ -27,7 +27,7 @@ class CityController < ApplicationController
     when "sofas"
       search1 = 'categories/vintage/antique/furniture&keywords="sofas"-"pillows"-"table"-"throw"-"card"-"poster"-"toy"-"doll"-"supplies"'
     when "desks"
-       search2 = 'categories/vintage/antique/furniture&tags=vintage&keywords="desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"'
+       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"'
     when "nursery_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="nursery"'
     when "mirrors"
@@ -41,7 +41,7 @@ class CityController < ApplicationController
     when "dining_chairs"
        search1 = 'categories/vintage/antique/furniture&keywords="dining chairs"-"jewelry"'
      when "coffee_table"
-       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="coffee table"-"tray"-"book"-"magazines"-"hardware"'
+       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="coffee table"-"tray"-"book"-"magazines"-"hardware"-"paper"'
     when "lounge_chairs"
        search1 = 'categories/vintage/antique/furniture&keywords="lounge chairs"'
     else
