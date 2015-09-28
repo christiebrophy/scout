@@ -23,15 +23,15 @@ class CityController < ApplicationController
     when "outdoor_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="outdoor furniture"'
     when "dressers"
-      search1 = 'categories/vintage/antique/furniture&keywords="dressers"-"tags"-"knobs"-"tray"-"box"-"linens"-"supplies"-"hair"-"jar"-"mirror"-"set"-"porcelain"-"bag"-"figurines"-"pottery"'
+      search1 = 'categories/vintage/antique/furniture&keywords="dressers"-"tags"-"hardware"-"tray"-"box"-"linens"-"supplies"-"hair"-"jar"-"mirror"-"set"-"porcelain"-"bag"-"figurines"-"pottery"'
     when "sofas"
       search1 = 'categories/vintage/antique/furniture&keywords="sofas"-"pillows"-"table"-"throw"-"card"-"poster"-"toy"-"doll"-"supplies"'
     when "desks"
-       search1 = 'categories/vintage/antique/furniture&keywords="desks"'
+       search1 = 'categories/vintage/antique/furniture&keywords="vintage desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"'
     when "nursery_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="nursery"'
     when "mirrors"
-      search1 = 'categories/vintage/antique/housewares&keywords="vintage mirror"-"compact"-"jewelry"-"dental"'
+      search1 = 'categories/vintage/antique/housewares&keywords="vintage mirror"-"compact"-"jewelry"-"dental"-"hand"'
     when "rattan"
        search1 = 'categories/vintage/antique/furniture&keywords="rattan"'
     when "side_tables"
