@@ -17,7 +17,7 @@ class CityController < ApplicationController
     when "chinoiserie"
       search1 = 'categories/vintage/antique/furniture&keywords="chinoiserie"'
     when "mid_century"
-      search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="mid century"'
+      search1 = 'categories/vintage/antique/furniture&tags=chairs&keywords="mid century"'
     when "hollywood_regency"
       search1 = 'categories/vintage/antique/furniture&keywords="hollywood regency"'
     when "outdoor_furniture"
