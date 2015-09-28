@@ -17,7 +17,7 @@ class CityController < ApplicationController
     when "chinoiserie"
       search1 = 'categories/vintage/antique/furniture&keywords="chinoiserie"'
     when "mid century"
-      search1 = 'categories/vintage/antique/furniture&keywords="mid century"'
+      search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="mid century"'
     when "hollywood_regency"
       search1 = 'categories/vintage/antique/furniture&keywords="hollywood regency"'
     when "outdoor_furniture"
@@ -27,7 +27,7 @@ class CityController < ApplicationController
     when "sofas"
       search1 = 'categories/vintage/antique/furniture&keywords="sofas"-"pillows"-"table"-"throw"-"card"-"poster"-"toy"-"doll"-"supplies"'
     when "desks"
-       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"'
+       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"-"collectibles"'
     when "nursery_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="nursery"'
     when "mirrors"
@@ -37,11 +37,11 @@ class CityController < ApplicationController
     when "side_tables"
        search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="side table"'
     when "lamps"
-       search1 = 'categories/housewares/lighting&tags=vintage&keywords="lamps"'
+       search1 = 'categories/housewares/lighting&tags=vintage&keywords="lamps"-"lace"-"trim"-"ribbonwork"-"fringe"-"applique"'
     when "dining_chairs"
        search1 = 'categories/vintage/antique/furniture&keywords="dining chairs"-"jewelry"'
      when "coffee_table"
-       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="coffee table"-"tray"-"book"-"magazines"-"hardware"-"paper"'
+       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="coffee table"-"tray"-"book"-"magazines"-"hardware"-"paper"-"coaster"'
     when "lounge_chairs"
        search1 = 'categories/vintage/antique/furniture&keywords="lounge chairs"'
     else
@@ -117,7 +117,7 @@ class CityController < ApplicationController
     end
     
     
-  editor_hash = {"dining_chairs"=>"Dining Chairs", "dressers"=>"Dressers", "sofas"=>"Sofas", "lamps"=>"Lighting", "side_tables"=>"Side Tables", "daybeds"=>"Daybeds / Benches", "rattan"=>"Rattan Furniture", "outdoor_furniture"=>"Outdoor Furniture", "desks"=>"Desks", "coffee_table"=>"Coffee Tables", "mirrors"=>"Mirrors", "hollywood_regency"=>"Hollywood Regency", "lounge_chairs"=>"Lounge Chairs"}
+  editor_hash = {"dining_chairs"=>"Dining Chairs", "dressers"=>"Dressers", "sofas"=>"Sofas", "lamps"=>"Lighting", "side_tables"=>"Side Tables", "daybeds"=>"Daybeds / Benches", "rattan"=>"Rattan Furniture", "outdoor_furniture"=>"Outdoor Furniture", "desks"=>"Desks", "coffee_table"=>"Coffee Tables", "mirrors"=>"Mirrors", "hollywood_regency"=>"Hollywood Regency", "lounge_chairs"=>"Lounge Chairs", "chinoiserie"=>"Chinoiserie"}
   @title = editor_hash[params[:editor]]
   end
 end
