@@ -16,7 +16,7 @@ class CityController < ApplicationController
   	case params[:editor]
     when "chinoiserie"
       search1 = 'categories/vintage/antique/furniture&keywords="chinoiserie"'
-    when "mid century"
+    when "mid_century"
       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="mid century"'
     when "hollywood_regency"
       search1 = 'categories/vintage/antique/furniture&keywords="hollywood regency"'
@@ -117,7 +117,7 @@ class CityController < ApplicationController
     end
     
     
-  editor_hash = {"dining_chairs"=>"Dining Chairs", "dressers"=>"Dressers", "sofas"=>"Sofas", "lamps"=>"Lighting", "side_tables"=>"Side Tables", "daybeds"=>"Daybeds / Benches", "rattan"=>"Rattan Furniture", "outdoor_furniture"=>"Outdoor Furniture", "desks"=>"Desks", "coffee_table"=>"Coffee Tables", "mirrors"=>"Mirrors", "hollywood_regency"=>"Hollywood Regency", "lounge_chairs"=>"Lounge Chairs", "chinoiserie"=>"Chinoiserie"}
+  editor_hash = {"dining_chairs"=>"Dining Chairs", "dressers"=>"Dressers", "sofas"=>"Sofas", "lamps"=>"Lighting", "side_tables"=>"Side Tables", "daybeds"=>"Daybeds / Benches", "rattan"=>"Rattan Furniture", "outdoor_furniture"=>"Outdoor Furniture", "desks"=>"Desks", "coffee_table"=>"Coffee Tables", "mirrors"=>"Mirrors", "hollywood_regency"=>"Hollywood Regency", "lounge_chairs"=>"Lounge Chairs", "chinoiserie"=>"Chinoiserie", "mid_century"=>"Mid-Century"}
   @title = editor_hash[params[:editor]]
   end
 end
