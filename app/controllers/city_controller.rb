@@ -43,7 +43,7 @@ class CityController < ApplicationController
      when "coffee_table"
        search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="coffee table"-"tray"-"book"-"magazines"-"hardware"-"paper"-"coaster"'
     when "lounge_chairs"
-       search1 = 'categories/vintage/antique/furniture&keywords="lounge chairs"'
+       search1 = 'categories/vintage/antique/furniture&keywords="lounge chairs"-"toy"-"supplies"-"jewelry"'
     else
       
     end
