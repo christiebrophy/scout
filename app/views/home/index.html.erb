@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Scoutiste</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+
 <body>
 
 
 
 
  <div class="container-fluid">
-        <div class="text-center" id="cityintro1">Scoutiste</div>
-        <div class="text-center" id="cityintro2">We filter local listings to show you only the best furniture and design.</div>
+        <div class="text-center" id="cityintro1">Scoutsy</div>
+        <div class="text-center" id="cityintro2">We filter Etsy listings to show you the best furniture in your city.</div>
         <div class="text-center" id="cityintro3">Say goodbye to the endless searching and scrolling.</div>
         <div class="text-center" id="cityintro4">Say hello to your new addiction.</div>
   </div>
@@ -44,13 +38,11 @@
  
 
   <br><br><br><br><br><br><br><br>
-
-<script src="assets/nanobar.min.js"></script>
 <script>
-      var nanobar = new Nanobar();
-      nanobar.go(100);
-      
-</script>
+ $(document).ready(function(){
+        $('.dropdown-toggle').dropdown();
+    });
+ </script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

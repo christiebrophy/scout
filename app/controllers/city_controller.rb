@@ -2,6 +2,7 @@ class CityController < ApplicationController
   require 'rest_client'
   require 'json'
   require 'addressable/uri'
+  require 'csv'
 
 
 
@@ -15,7 +16,7 @@ class CityController < ApplicationController
   def search
   	case params[:editor]
     when "chinoiserie"
-      search1 = 'categories/vintage/antique/furniture&keywords="chinoiserie"'
+      search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="chinoiserie"'
     when "mid_century"
       search1 = 'categories/vintage/antique/furniture&tags=chairs&keywords="mid century"'
     when "hollywood_regency"
@@ -23,9 +24,9 @@ class CityController < ApplicationController
     when "outdoor_furniture"
       search1 = 'categories/vintage/antique/furniture&keywords="outdoor furniture"'
     when "dressers"
-      search1 = 'categories/vintage/antique/furniture&keywords="dressers"-"tags"-"hardware"-"tray"-"box"-"linens"-"supplies"-"hair"-"jar"-"mirror"-"set"-"porcelain"-"bag"-"figurines"-"pottery"'
+      search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="dressers"-"tags"-"hardware"-"tray"-"box"-"linens"-"supplies"-"hair"-"jar"-"mirror"-"set"-"porcelain"-"bag"-"figurines"-"pottery"'
     when "sofas"
-      search1 = 'categories/vintage/antique/furniture&keywords="sofas"-"pillows"-"table"-"throw"-"card"-"poster"-"toy"-"doll"-"supplies"'
+      search1 = 'categories/vintage/antique/furniture&keywords="sofas"-"pillows"-"table"-"throw"-"card"-"poster"-"toy"-"doll"-"supplies"-"cover"'
     when "desks"
        search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="desks"-"hardware"-"supplies"-"clock"-"frame"-"letter"-"collectibles"'
     when "nursery_furniture"
@@ -43,7 +44,7 @@ class CityController < ApplicationController
      when "coffee_table"
        search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="coffee table"-"tray"-"book"-"magazines"-"hardware"-"paper"-"coaster"'
     when "lounge_chairs"
-       search1 = 'categories/vintage/antique/furniture&keywords="lounge chairs"-"toy"-"supplies"-"jewelry"'
+       search1 = 'categories/vintage/antique/furniture&tags=vintage&keywords="lounge chairs"-"toy"-"supplies"-"jewelry"'
     else
       
     end
@@ -59,6 +60,8 @@ class CityController < ApplicationController
     
     city_hash = {"Atlanta"=>"4180439", "Austin"=>"4671654", "Boston"=>"4930956", "Chicago"=>"4887398", "Charlotte"=>"4460243", "Dallas"=>"4684888", "Denver"=>"5419384", "Houston"=>"4699066", "Kansas City"=>"4393217", "Las Vegas"=>"5506956", "Los Angeles"=>"5368361,5376890,5367929", "Miami"=>"4164138,4177887,4155966", "Minneapolis"=>"5037649", "Nashville"=>"4644585", "New York"=>"5128581,5101760,5125125,", "Phoenix"=>"5308655,5313457", "portland"=>"5746545", "Raleigh"=>"4487042", "St Louis"=>"4407066", "San Diego"=>"5391811,5363943", "San Francisco"=>"5391959,5392171,5378538", "Seattle"=>"5809844", "Washington DC"=>"4140963"}
     @city = city_hash[params[:city]]
+    @location = params[:city]
+    @category = params[:editor]
     
     url = "https://openapi.etsy.com/v2/listings/active?#{search1}&location=#{@city}&fields=listing_id&limit=25&api_key=73nugzwvzagme29vrv97pxf0"
     
@@ -100,21 +103,24 @@ class CityController < ApplicationController
       @parsed = JSON.parse(response_3)
       @images = @parsed['results']
       @hash = @images[0]
-      @image = @hash['url_170x135'] 
+      @image = @hash['url_170x135']
+      @likes = 0
       
-    
-      
-
-      
-      
-      
-
+  
       #save the results
-      @results = {"title" => @title, "url" => @url, "price" => @price, "image" => @image}
-    
-    
+      @results = {"title" => @title, "url" => @url, "price" => @price, "image" => @image, "city" => @location, "category" => @category, "likes" => @likes}
+      
+
+  
     @array << @results.dup
-    end
+
+  
+
+end
+
+
+
+   
     
     
   editor_hash = {"dining_chairs"=>"Dining Chairs", "dressers"=>"Dressers", "sofas"=>"Sofas", "lamps"=>"Lighting", "side_tables"=>"Side Tables", "daybeds"=>"Daybeds / Benches", "rattan"=>"Rattan Furniture", "outdoor_furniture"=>"Outdoor Furniture", "desks"=>"Desks", "coffee_table"=>"Coffee Tables", "mirrors"=>"Mirrors", "hollywood_regency"=>"Hollywood Regency", "lounge_chairs"=>"Lounge Chairs", "chinoiserie"=>"Chinoiserie", "mid_century"=>"Mid-Century"}
